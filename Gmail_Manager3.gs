@@ -15,6 +15,7 @@ function onOpen(){
   
 }
 
+//ユーザー定義関数
 function myAlert(){
   var ui = SpreadsheetApp.getUi();
   var ui_response = ui.alert(
