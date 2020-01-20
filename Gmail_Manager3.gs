@@ -51,7 +51,7 @@ function deleteMail(){
   from_lists.forEach(function(value,index,array){
     value.forEach(function(v,i,a){
         var query = 'from:'+　"\""+v+"\"";
-      var threads = GmailApp.search(query,0,10);
+      var threads = GmailApp.search(query,0,50);
       threads.forEach(function(v,i,a){
       delete_threads.push(v.getFirstMessageSubject());
       v.moveToTrash();
